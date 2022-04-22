@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="container" >
+        <div class="photo">
+        <img id="photo1" src="quiz-lady-1.png">
+        </div>
+        <div class="text">
+           <p id="txt1"> skillcrush </p>
+           <p id="txt2">WONDERING IF TECH IS RIGHT<br/> FOR YOU</p>
+           <p id="txt3">TAKE THE 3 MINUTE QUIZ AND FIND OUT</p>
+           <button id="strt"  onclick="myfunction()">START</button>
+           <!-- <p id="txt5">or press ENTER</p> -->
+        </div>
+       
+    </div>
+    <div id="page2" class="panel" hidden>
+      <div class="a">
+        <input id="q1" type="text" value="QUESTION 1 OF 3">
+        <!-- <div style='transform: scale(0.65); position: relative; top: -100px;'> -->
+            <h3>WHAT IS full form of css</h3>
+            <p>Choose 1 answer</p>
+            <!-- <hr /> -->
+        
+            <div id='block-11'>
+              <label for='option-11'  style=' padding: 1px; font-size: 1rem;'>
+            <div id="box1">
+              
+                <input type='radio' name='option' value='1lack' id='option-11' style='margin-right: 10px; vertical-align: middle; margin-top: -2px;font-size: 5px;text-align: center;' />
+                cascading style sheet</label>
+              <span id='result-11'>
+
+              </span>
+              <!-- </center> -->
+            </div>
+            </div>
+            <!-- <hr /> -->
+          
+            <div id='block-12' >
+              <label for='option-12'  style=' padding: -1px; font-size: 1rem;'>
+                <div id="box1">
+                <input type='radio' name='option' value='2lack' id='option-12' style=' margin-right: 10px; vertical-align: middle; margin-top: -2px;text-align: center;' />
+                cascade style server</label>
+              <span id='result-12'></span>
+            </div>
+            </div>
+            <!-- <hr /> -->
+          
+            <div id='block-13'>
+              <label for='option-13'  style=' padding: 1px; font-size: 1rem;'>
+                <div id="box1">
+                <input type='radio' name='option' value='3lacks' id='option-13' style=' margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                camron server style</label>
+              <span id='result-13'></span>
+            </div>
+            </div>
+            <!-- <hr /> -->
+          
+            <div id='block-14' >
+              <label for='option-14' style=' padding: -1px; font-size: 1rem;'>
+                <div id="box1">
+                <input type='radio' name='option' value='4lacks' id='option-14' style=' margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                casata style sheet</label>
+              <span id='result-14'></span>
+            </div>
+          </div>
+            <!-- <hr /> -->
+            <button id="strt-1" type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;margin-top: 10px;margin-right: 10px;margin-left: 50px;'>Submit</button>
+            <button id="strt-2" type='button' onclick='myfunction2()'style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;margin-right: 10px;'>NEXT</button>
+          </div>
+        </div>
+        <div id="page3" class="panel" hidden>
+          <div class="b">
+            <input id="q2" type="text" value="QUESTION 2 OF 3">
+            <!-- <div style='transform: scale(0.65); position: relative; top: -100px;'> -->
+                <h3>JAVASCRIPT IS AN _ LANGUAGE</h3>
+                <p>Choose 1 answer</p>
+                <!-- <hr /> -->
+            
+                <div id='block-15' style='padding: 1px;'>
+                  <label for='option-15' style=' padding: 1px; font-size: 1rem;'>
+                    <div id="box1">
+                    <input type='radio' name='option' value='1lack' id='option-15' style=' margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    OBJECT ORIENTED LANGUAGE</label>
+                  <span id='result-15'></span>
+                </div>
+                </div>
+                <!-- <hr /> -->
+              
+                <div id='block-16' >
+                  <label for='option-16' style=' padding: -1px; font-size: 1rem;'>
+                    <div id="box1">
+                    <input type='radio' name='option' value='2lack' id='option-16' style=' margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    OBJECT-BASED</label>
+                  <span id='result-16'></span>
+                </div>
+                </div>
+                <!-- <hr /> -->
+              
+                <div id='block-17' style='padding: 1px;'>
+                  <label for='option-17' style=' padding: 1px; font-size: 1rem;'>
+                    <div id="box1">
+                    <input type='radio' name='option' value='3lacks' id='option-17' style=' margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    PROCEDURAL</label>
+                  <span id='result-17'></span>
+                </div>
+              </div>
+                <!-- <hr /> -->
+              
+                <div id='block-18' style='padding: -1px;'>
+                  <label for='option-18' style=' padding: -1px; font-size: 1rem;'>
+                    <div id="box1">
+                    <input type='radio' name='option' value='4lacks' id='option-18' style=' margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    NONE OF THE ABOVE</label>
+                  <span id='result-18'></span>
+                </div>
+              </div>
+                <!-- <hr /> -->
+                <button id="strt-3" type='button' onclick='displayAnswer2()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;padding: 2px;margin-top: 10px;margin-right:-80px;margin-left: 50px;'>Submit</button>
+                <button id="strt-4" type='button' onclick='myfunction3()'style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;margin-left: 100px;margin-right:10px;'>NEXT</button>
+              </div>
+            </div>
+            <div id="page4" class="panel" hidden>
+              <div class="c">
+                <input id="q3" type="text" value="QUESTION 3 OF 3">
+                <!-- <div style='transform: scale(0.65); position: relative; top: -100px;'> -->
+                    <h3> Upon encountering empty statements, what does the Javascript Interpreter do?</h3>
+                    <p>Choose 1 answer</p>
+                    <!-- <hr /> -->
+                
+                    <div id='block-19'>
+                      
+                      <label for='option-19' style=' padding: 1px; font-size: 1rem;'>
+                        <div id="box1">
+                        <input type='radio' name='option' value='1lack' id='option-19' style='margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                        IGNORES THE STATEMENT</label>
+                      <span id='result-19'></span>
+                    </div>
+                    </div>
+                    <!-- <hr /> -->
+                  
+                    <div id='block-20' >
+                      <label for='option-20' style=' padding: -1px; font-size: 1rem;'>
+                        <div id="box1">
+                        <input type='radio' name='option' value='2lack' id='option-20' style=' margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                        THROWS A STATEMENT</label>
+                      <span id='result-20'></span>
+                    </div>
+                    </div>
+                    <!-- <hr /> -->
+                  
+                    <div id='block-21' >
+                      <label for='option-21' style=' padding: 1px; font-size: 1rem;'>
+                        <div id="box1">
+                        <input type='radio' name='option' value='3lacks' id='option-21' style=' margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                        GIVES ERROR</label>
+                      <span id='result-21'></span>
+                    </div>
+                    </div>
+                    <!-- <hr /> -->
+                  
+                    <div id='block-22'>
+                      <label for='option-22' style=' padding: -1px; font-size: 1rem;'>
+                        <div id="box1">
+                        <input type='radio' name='option' value='4lacks' id='option-22' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                        NONE OF THE ABOVE</label>
+                      <span id='result-22'></span>
+                    </div>
+                  </div>
+                    <!-- <hr /> -->
+                    <button id="strt-5" type='button' onclick='displayAnswer3()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;margin-right: -70px;margin-left: 50px;margin-top:10px;'>Submit</button>
+                    <button id="strt-6" type='button' onclick='myfunction4()'style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;margin-left: 100px;'>NEXT</button>
+                  </div>
+                </div>    
+                <div id="page5" class="panel" hidden>
+                  <p></p>
+                </div> 
+       <div id="score">
+        <!-- <button id="strt-6" type='button' onclick='myfunction5()'style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;margin-left: 100px;'>CLICK ON THE BUTTON TO VIEW SCORE</button> -->
+         
+       </div>   
+       
+       
+    
+       <script>
+         let count=0;
+         document.getElementById('score').hidden=true;
+    function myfunction()
+      {
+    document.getElementById("strt").addEventListener("click", function()
+    {
+  document.getElementById("container").hidden = true;
+  document.getElementById("page2").hidden = false;
+    },false);
+    }
+    function displayAnswer1() {
+    if (document.getElementById('option-11').checked) {
+      // document.getElementById('block-11').style.border = '3px solid limegreen'
+      document.getElementById('result-11').style.color = 'limegreen'
+      document.getElementById('result-11').innerHTML = 'Correct!'
+      count+=10;
+      document.getElementById("score").innerHTML = "<div class='yourscore'> YOUR SCORE IS </div><div class='countscore'>"+count+"</div>";
+      // document.getElementById('score').innerHTML=count;
+      // document.getElementById("score").innerHTML = "<span style='font-size: 20px; font-family: sans-serif;  margin-bottom: 50px;'> YOUR SCORE IS </span>"+count;
+          }
+    if (document.getElementById('option-12').checked) {
+      // document.getElementById('block-12').style.border = '3px solid red'
+      document.getElementById('result-12').style.color = 'red'
+      document.getElementById('result-12').innerHTML = 'Incorrect!'
+      showCorrectAnswer1()
+    }
+    if (document.getElementById('option-13').checked) {
+      // document.getElementById('block-13').style.border = '3px solid red'
+      document.getElementById('result-13').style.color = 'red'
+      document.getElementById('result-13').innerHTML = 'Incorrect!'
+      showCorrectAnswer1()
+    }
+    if (document.getElementById('option-14').checked) {
+      // document.getElementById('block-14').style.border = '3px solid red'
+      document.getElementById('result-14').style.color = 'red'
+      document.getElementById('result-14').innerHTML = 'Incorrect!'
+      showCorrectAnswer1()
+    }
+}
+  // function myfunction2()
+  // {
+  // document.getElementById("strt-2").addEventListener("click", function()
+  //   {
+  // document.getElementById("page2").hidden = true;
+  // document.getElementById("page3").hidden = false;
+  //   },false);
+  // }
+
+  function myfunction2()
+      {
+    document.getElementById("strt-2").addEventListener("click", function()
+    {
+  document.getElementById("page2").hidden = true;
+  document.getElementById("page3").hidden = false;
+    },false);
+      }
+      function displayAnswer2() {
+    if (document.getElementById('option-15').checked) {
+      // document.getElementById('block-15').style.border = '3px solid limegreen'
+      document.getElementById('result-15').style.color = 'limegreen'
+      document.getElementById('result-15').innerHTML = 'Correct!'
+      count+=10;
+      document.getElementById("score").innerHTML = "<div class='yourscore'> YOUR SCORE IS </div><div class='countscore'>"+count+"</div>"; 
+    }
+    if (document.getElementById('option-16').checked) {
+      // document.getElementById('block-16').style.border = '3px solid red'
+      document.getElementById('result-16').style.color = 'red'
+      document.getElementById('result-16').innerHTML = 'Incorrect!'
+      showCorrectAnswer1()
+    }
+    if (document.getElementById('option-17').checked) {
+      // document.getElementById('block-17').style.border = '3px solid red'
+      document.getElementById('result-17').style.color = 'red'
+      document.getElementById('result-17').innerHTML = 'Incorrect!'
+      showCorrectAnswer1()
+    }
+    if (document.getElementById('option-18').checked) {
+      // document.getElementById('block-18').style.border = '3px solid red'
+      document.getElementById('result-18').style.color = 'red'
+      document.getElementById('result-18').innerHTML = 'Incorrect!'
+      showCorrectAnswer1()
+    }
+}
+function myfunction3()
+      {
+    document.getElementById("strt-4").addEventListener("click", function()
+    {
+  document.getElementById("page3").hidden = true;
+  document.getElementById("page4").hidden = false;
+    },false);
+      }
+      function displayAnswer3() {
+    if (document.getElementById('option-19').checked) {
+      // document.getElementById('block-19').style.border = '3px solid limegreen'
+      document.getElementById('result-19').style.color = 'limegreen'
+      document.getElementById('result-19').innerHTML = 'Correct!'
+      count+=10;
+      document.getElementById("score").innerHTML = "<div class='yourscore'> YOUR SCORE IS</div><div class='countscore'>"+count+"</div>"
+      // document.getElementById('score').innerHTML=count;
+      // document.getElementById("score").innerHTML = "<span style='font-size: 20px; font-family: sans-serif; margin-top: 50px;'> YOUR SCORE IS </span>"+count;  
+    }
+    if (document.getElementById('option-20').checked) {
+      // document.getElementById('block-20').style.border = '3px solid red'
+      document.getElementById('result-20').style.color = 'red'
+      document.getElementById('result-20').innerHTML = 'Incorrect!'
+      showCorrectAnswer1()
+    }
+    if (document.getElementById('option-21').checked) {
+      // document.getElementById('block-21').style.border = '3px solid red'
+      document.getElementById('result-21').style.color = 'red'
+      document.getElementById('result-21').innerHTML = 'Incorrect!'
+      showCorrectAnswer1()
+    }
+    if (document.getElementById('option-22').checked) {
+      // document.getElementById('block-22').style.border = '3px solid red'
+      document.getElementById('result-22').style.color = 'red'
+      document.getElementById('result-22').innerHTML = 'Incorrect!'
+      showCorrectAnswer1()
+    }
+}
+
+function myfunction4()
+      {
+    document.getElementById("strt-6").addEventListener("click", function()
+    {
+  document.getElementById("page4").hidden = true;
+  document.getElementById("score").hidden = false;
+    },false);
+      }
+  //     function myfunction5()
+  //     {    
+  //   document.getElementById("strt-6").addEventListener("click", function()
+  //   {
+  //     var message = "Your score for the test is " + "count";
+  // document.write("<p>" + message + "%</p>")
+  //   });
+  //   }
+
+    </script>
+    
+</body>
+</html>
